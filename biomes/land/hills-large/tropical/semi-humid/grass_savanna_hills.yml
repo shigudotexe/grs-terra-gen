@@ -1,0 +1,16 @@
+id: GRASS_SAVANNA_HILLS
+type: BIOME
+extends: SAVANNA_HILLS
+color: $biomes/colors.yml:GRASS_SAVANNA_HILLS
+
+features:
+  flora:
+    - CACTUS_SPARSE
+    - TALL_GRASS
+    - POPPY_PATCH
+    - DANDELION_PATCH
+  trees:
+    - SPARSE_ACACIA_TREES
+
+  landforms:
+    - COPPER_BOULDERS

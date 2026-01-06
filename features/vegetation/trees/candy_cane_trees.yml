@@ -1,0 +1,37 @@
+id: CANDY_CANE_TREES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 20
+  padding: 10
+  salt: 2345
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 60
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow_block
+          - minecraft:grass_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures:
+    - candy_cane: 1

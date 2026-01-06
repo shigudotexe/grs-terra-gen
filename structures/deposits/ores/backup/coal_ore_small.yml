@@ -1,0 +1,12 @@
+id: COAL_ORE_OLD
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:coal_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_coal_ore
+
+size: 7
+shape: VEIN
+thickness: 0.8

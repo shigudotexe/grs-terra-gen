@@ -1,0 +1,10 @@
+id: ORES_CHERRY_FOREST
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_2
+    - IRON_TIER_2
+    - COAL_TIER_3
+    - COPPER_TIER_3

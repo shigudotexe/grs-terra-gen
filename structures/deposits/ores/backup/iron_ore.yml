@@ -1,0 +1,13 @@
+id: IRON_ORE_OLD
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:iron_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_iron_ore
+
+size: 9
+shape: TEARDROP
+
+exposed: 0.9

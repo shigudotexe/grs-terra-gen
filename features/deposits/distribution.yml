@@ -1,0 +1,197 @@
+# Auto-generated Distribution Configuration
+# Based on Project Map & Tiers
+
+# ---
+# Ore Veins
+# ---
+diamond_tier_1:
+  averageCountPerChunk: 2
+  salt: 1043
+  range:
+    min: -144
+    max: 0
+
+diamond_tier_2:
+  averageCountPerChunk: 6
+  salt: 1054
+  range:
+    min: -144
+    max: 0
+
+diamond_tier_3:
+  averageCountPerChunk: 18
+  salt: 1054
+  range:
+    min: -144
+    max: 0
+
+lapis_tier_2:
+  averageCountPerChunk: 6
+  salt: 3564
+  range:
+    min: -32
+    max: 32
+
+lapis_tier_4:
+  averageCountPerChunk: 35
+  salt: 3586
+  range:
+    min: -32
+    max: 32
+
+iron_tier_2:
+  averageCountPerChunk: 8
+  salt: 6943
+  range:
+    min: -24
+    max: 56
+
+iron_tier_3:
+  averageCountPerChunk: 32
+  salt: 6954
+  range:
+    min: -24
+    max: 56
+
+copper_tier_3:
+  averageCountPerChunk: 22
+  salt: 2965
+  range:
+    min: -16
+    max: 112
+
+gold_tier_2:
+  averageCountPerChunk: 8
+  salt: 5934
+  range:
+    min: -64
+    max: 480
+
+gold_tier_4:
+  averageCountPerChunk: 40
+  salt: 5956
+  range:
+    min: -64
+    max: 480
+
+redstone_tier_2:
+  averageCountPerChunk: 6
+  salt: 7041
+  range:
+    min: -96
+    max: 52
+
+redstone_tier_4:
+  averageCountPerChunk: 35
+  salt: 7063
+  range:
+    min: -96
+    max: 34
+
+emerald_tier_2:
+  averageCountPerChunk: 12
+  salt: 5113
+  range:
+    min: -16
+    max: 30
+
+emerald_tier_4:
+  averageCountPerChunk: 35
+  salt: 5135
+  range:
+    min: -16
+    max: 30
+
+coal_tier_3:
+  averageCountPerChunk: 24
+  salt: 1101
+  range:
+    min: -16
+    max: 100
+
+coal_tier_4:
+  averageCountPerChunk: 38
+  salt: 1112
+  range:
+    min: -144
+    max: 100
+
+coal_tier_5:
+  averageCountPerChunk: 45
+  salt: 1123
+  range:
+    min: -144
+    max: 100
+
+# ---
+# Deposits
+# ---
+granite:
+  averageCountPerChunk: 4
+  salt: 9141
+  range:
+    min: 0
+    max: 319
+
+andesite:
+  averageCountPerChunk: 4
+  salt: 1923
+  range:
+    min: 0
+    max: 319
+
+dirt:
+  averageCountPerChunk: 3
+  salt: 2139
+  range:
+    min: 0
+    max: 319
+
+diorite:
+  averageCountPerChunk: 5
+  salt: 6912
+  range:
+    min: 0
+    max: 319
+
+clay:
+  averageCountPerChunk: 3
+  salt: 1785
+  range:
+    min: 50
+    max: 319
+
+gravel:
+  averageCountPerChunk: 5
+  salt: 1239
+  range:
+    min: -32
+    max: 319
+
+tuff:
+  averageCountPerChunk: 3
+  salt: 1239
+  range:
+    min: -64
+    max: 0
+
+river-dripstone:
+  averageCountPerChunk: 3
+  salt: 2952
+  range:
+    min: 75
+    max: 85
+
+powdersnow:
+  averageCountPerChunk: 1
+  salt: 5825
+  range:
+    min: 50
+    max: 319
+
+blueice:
+  averageCountPerChunk: 7
+  salt: 1678
+  range:
+    min: 40
+    max: 65

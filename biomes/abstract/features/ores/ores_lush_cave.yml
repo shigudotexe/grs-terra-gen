@@ -1,0 +1,10 @@
+id: ORES_LUSH_CAVE
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_1
+    - IRON_TIER_3
+    - COAL_TIER_4
+    - COAL_ORE_VEINS

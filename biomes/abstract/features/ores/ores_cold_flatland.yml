@@ -1,0 +1,11 @@
+id: ORES_COLD_FLATLAND
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_1
+    - EMERALD_TIER_2
+    - IRON_TIER_2
+    - COAL_TIER_3
+    - COPPER_TIER_3

@@ -1,0 +1,15 @@
+id: MATERIALS_BOREAL
+type: BIOME
+abstract: true
+
+features:
+  trees:
+    # Dense wood production
+    - SPRUCE_TREES
+    - SPRUCE_TREE_PATCHES
+    # Giant trees for massive wood yields
+    - GIANT_REDWOODS
+  landforms:
+    # Stone for construction
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES

@@ -1,0 +1,12 @@
+id: LAPIS_ORE_OLD
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:lapis_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_lapis_ore
+
+size: 10
+
+exposed: 0.9

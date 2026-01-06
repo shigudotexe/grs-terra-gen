@@ -1,0 +1,14 @@
+id: MATERIALS_JUNGLE
+type: BIOME
+abstract: true
+
+features:
+  flora:
+    # Bamboo for construction
+    - BAMBOO_PATCHES
+    # Vines for decoration
+    - LARGE_LEAF_VINES
+  trees:
+    # Dense jungle wood
+    - JUNGLE_TREES
+    - JUNGLE_BUSHES

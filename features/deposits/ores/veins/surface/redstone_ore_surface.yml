@@ -1,0 +1,26 @@
+id: REDSTONE_ORE_SURFACE
+type: FEATURE
+
+# DISTRIBUTOR: Identical to redstone veins
+distributor:
+  type: SAMPLER
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 9234              # <--- MATCHES REDSTONE VEINS EXACTLY
+    frequency: 0.004
+  threshold: 0.05
+
+# LOCATOR: Only finds the surface
+locator:
+  type: TOP
+  range:
+    min: 50
+    max: 320
+
+# STRUCTURES: The indicator
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    # This places a single redstone block
+    - BLOCK:minecraft:redstone_block: 1

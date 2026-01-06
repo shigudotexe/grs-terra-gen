@@ -1,0 +1,83 @@
+id: EMERALD_ORE_VEINS
+type: FEATURE
+
+anchors:
+  # Where the vein generates - high altitude
+  - &range # Y min and max
+      min: 0
+      max: 200
+  - &veinThreshold 0.035 # Extremely rare
+  - &veinFrequency 0.002 # Very spread out
+  - &salt 3456 # Unique seed
+  
+  # Emerald veins are thick with minimal webbing
+  - &wallSalt 3457
+  - &wallFrequency 0.01 # Very low frequency = very thick
+  - &wallThickness 0.20 # Very thick walls
+  
+  - &webSalt 3458
+  - &webFrequency 0.025 # Few holes
+  - &webThickness 0.18 # Small holes
+  
+  - &replace # A list of blocks to replace
+    - minecraft:stone
+  - &blocks # Emerald veins with diorite matrix
+    - blank: 80
+    - BLOCK:minecraft:diorite: 110
+    - BLOCK:minecraft:emerald_ore: 15
+    - BLOCK:minecraft:emerald_block: 1
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: OPEN_SIMPLEX_2
+      salt: *salt
+      frequency: *veinFrequency
+  threshold: *veinThreshold
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      pattern:
+        type: MATCH_SET
+        blocks: *replace
+        offset: 0
+      range: *range
+
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: "|webWalls(x,y,z)|<wallThickness"
+        variables:
+          wallThickness: *wallThickness
+        samplers:
+          webWalls:
+            dimensions: 3
+            type: OPEN_SIMPLEX_2
+            frequency: *wallFrequency
+            salt: *wallSalt
+  
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: webPunchouts(x,y,z)>-webThickness
+        variables:
+          webThickness: *webThickness
+        samplers:
+          webPunchouts:
+            dimensions: 3
+            type: CELLULAR
+            distance: Euclidean
+            return: Distance2Div
+            frequency: *webFrequency
+            salt: *webSalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: *blocks

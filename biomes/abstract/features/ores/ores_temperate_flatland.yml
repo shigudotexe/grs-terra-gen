@@ -1,0 +1,12 @@
+id: ORES_TEMPERATE_FLATLAND
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_1
+    - IRON_TIER_2
+    - REDSTONE_TIER_2
+    - COAL_TIER_3
+    - COPPER_TIER_3
+

@@ -1,0 +1,26 @@
+id: COAL_ORE_SURFACE
+type: FEATURE
+
+# DISTRIBUTOR: Identical to coal veins
+distributor:
+  type: SAMPLER
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 8765              # <--- MATCHES COAL VEINS EXACTLY
+    frequency: 0.0035
+  threshold: 0.12
+
+# LOCATOR: Only finds the surface
+locator:
+  type: TOP
+  range:
+    min: 50
+    max: 320
+
+# STRUCTURES: The indicator
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    # This places a single coal block
+    - BLOCK:minecraft:coal_block: 1

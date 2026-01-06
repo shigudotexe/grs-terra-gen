@@ -1,0 +1,26 @@
+id: LAPIS_ORE_SURFACE
+type: FEATURE
+
+# DISTRIBUTOR: Identical to lapis veins
+distributor:
+  type: SAMPLER
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 5647              # <--- MATCHES LAPIS VEINS EXACTLY
+    frequency: 0.002
+  threshold: 0.04
+
+# LOCATOR: Only finds the surface
+locator:
+  type: TOP
+  range:
+    min: 50
+    max: 320
+
+# STRUCTURES: The indicator
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    # This places a single lapis block
+    - BLOCK:minecraft:lapis_block: 1

@@ -1,0 +1,14 @@
+id: EMERALD_ORE_TIER_4
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:emerald_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_emerald_ore
+
+size: 6
+shape: VEIN
+thickness: 0.7
+
+exposed: 0.9

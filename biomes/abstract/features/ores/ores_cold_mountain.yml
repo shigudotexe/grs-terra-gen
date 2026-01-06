@@ -1,0 +1,12 @@
+id: ORES_COLD_MOUNTAIN
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_2
+    - IRON_TIER_3
+    - COAL_TIER_3
+    - COPPER_TIER_3
+    - EMERALD_TIER_4
+    - EMERALD_ORE_VEINS

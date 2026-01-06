@@ -1,0 +1,12 @@
+id: XERIC_LOW_HILLS
+type: BIOME
+extends: [EQ_TERRACED_HILLS, XERIC_HILLS]
+color: $biomes/colors.yml:XERIC_LOW_HILLS
+
+tags:
+  - LAND_CAVES
+  - USE_RIVER_TEMPERATE_MARSH
+
+features:
+  landforms:
+    - COPPER_BOULDERS

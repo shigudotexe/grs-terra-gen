@@ -1,0 +1,11 @@
+id: CALDERA_VOLCANO_PIT_EDGE
+type: BIOME
+extends: [EQ_VOLCANO_PIT_EDGE_LOW, CALDERA_VOLCANO_PIT, CARVING_OCEAN, ORES_VOLCANO, BASE]
+color: $biomes/colors.yml:CALDERA_VOLCANO_PIT_EDGE
+
+features:
+  flora:
+    - CACTUS_SPARSE
+
+  landforms:
+    - COAL_BOULDERS

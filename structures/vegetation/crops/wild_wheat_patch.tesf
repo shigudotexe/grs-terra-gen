@@ -1,0 +1,10 @@
+num wheat = 3 + randomInt(6);
+
+for (num i = 0; i < wheat; i = i + 1) {
+    num x = randomInt(6) - 2;
+    num z = randomInt(6) - 2;
+    
+    if (getBlock(x, -1, z) == "minecraft:grass_block") {
+        block(x, 0, z, "minecraft:wheat[age=7]");
+    }
+}

@@ -1,0 +1,12 @@
+id: SANDSTONE_WETLANDS
+type: BIOME
+extends: [EQ_BUTTES_WETLANDS, SANDSTONE_ARCHIPELAGO]
+color: $biomes/colors.yml:SANDSTONE_WETLANDS
+
+features:
+  flora:
+    - SUGAR_CANE
+    - CACTUS_SPARSE
+
+  landforms:
+    - COPPER_BOULDERS

@@ -1,0 +1,11 @@
+id: REDSTONE_ORE_OLD
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:redstone_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_redstone_ore
+
+size: 16
+shape: TEARDROP

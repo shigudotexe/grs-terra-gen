@@ -1,0 +1,12 @@
+id: SUBTROPICAL_DEEP_OCEAN
+type: BIOME
+extends: [PALETTE_OCEAN, EQ_DEEP_OCEAN, CARVING_OCEAN, ORES_OCEAN, BASE]
+vanilla: minecraft:deep_lukewarm_ocean
+color: $biomes/colors.yml:SUBTROPICAL_DEEP_OCEAN
+
+features:
+  flora:
+    - SUGAR_CANE
+
+  landforms:
+    - COPPER_BOULDERS

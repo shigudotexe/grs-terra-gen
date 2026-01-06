@@ -1,0 +1,83 @@
+id: COAL_ORE_VEINS
+type: FEATURE
+
+anchors:
+  # Where the vein generates - surface level
+  - &range # Y min and max
+      min: 0
+      max: 250
+  - &veinThreshold 0.13 # More common than others
+  - &veinFrequency 0.004 # Moderate spread
+  - &salt 8765 # Unique seed
+  
+  # Coal veins are medium with heavy webbing
+  - &wallSalt 8766
+  - &wallFrequency 0.02
+  - &wallThickness 0.13
+  
+  - &webSalt 8767
+  - &webFrequency 0.055 # Lots of holes
+  - &webThickness 0.32 # Big holes
+  
+  - &replace # A list of blocks to replace
+    - minecraft:stone
+  - &blocks # Coal veins with andesite matrix
+    - blank: 65
+    - BLOCK:minecraft:andesite: 130
+    - BLOCK:minecraft:coal_ore: 50
+    - BLOCK:minecraft:coal_block: 3
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: OPEN_SIMPLEX_2
+      salt: *salt
+      frequency: *veinFrequency
+  threshold: *veinThreshold
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      pattern:
+        type: MATCH_SET
+        blocks: *replace
+        offset: 0
+      range: *range
+
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: "|webWalls(x,y,z)|<wallThickness"
+        variables:
+          wallThickness: *wallThickness
+        samplers:
+          webWalls:
+            dimensions: 3
+            type: OPEN_SIMPLEX_2
+            frequency: *wallFrequency
+            salt: *wallSalt
+  
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: webPunchouts(x,y,z)>-webThickness
+        variables:
+          webThickness: *webThickness
+        samplers:
+          webPunchouts:
+            dimensions: 3
+            type: CELLULAR
+            distance: Euclidean
+            return: Distance2Div
+            frequency: *webFrequency
+            salt: *webSalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: *blocks

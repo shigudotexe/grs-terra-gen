@@ -1,0 +1,5 @@
+id: DIAMOND_ORE_SMALL_OLD
+type: ORE
+extends: DIAMOND_ORE_OLD
+
+size: 4

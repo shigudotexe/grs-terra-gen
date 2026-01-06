@@ -1,0 +1,14 @@
+id: ORES_WARM_MOUNTAIN
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_2
+    - IRON_TIER_3
+    - COAL_TIER_3
+    - COPPER_TIER_3
+    - LAPIS_TIER_4
+    - LAPIS_ORE_VEINS
+    - EMERALD_TIER_2
+

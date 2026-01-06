@@ -1,0 +1,37 @@
+id: CHRISTMAS_TREES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 25
+  padding: 15
+  salt: 3456
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 60
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow_block
+          - minecraft:grass_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures:
+    - christmas_tree: 1

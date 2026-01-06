@@ -1,0 +1,11 @@
+id: MATERIALS_DESERT
+type: BIOME
+abstract: true
+
+features:
+  flora:
+    # Cactus farming for unique building material
+    - CACTUS_SPARSE
+    # Desert specialty materials
+    - DEAD_BUSHES
+    - DRY_GRASS

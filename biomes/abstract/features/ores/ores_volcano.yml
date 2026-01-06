@@ -1,0 +1,12 @@
+id: ORES_VOLCANO
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_2
+    - IRON_TIER_2
+    - COAL_TIER_5
+    - COPPER_TIER_3
+    - DIAMOND_ORE_VEINS
+    - COAL_ORE_VEINS

@@ -1,0 +1,11 @@
+id: CROPS_TEMPERATE
+type: BIOME
+abstract: true
+
+features:
+  flora:
+    # Root vegetable specialization
+    - WILD_CARROTS
+    - WILD_BEETROOT
+    # Secondary grain
+    - WILD_WHEAT

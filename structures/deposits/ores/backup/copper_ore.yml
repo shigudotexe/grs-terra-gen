@@ -1,0 +1,11 @@
+id: COPPER_ORE_OLD
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:copper_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_copper_ore
+
+size: 10
+shape: SHEET

@@ -1,0 +1,83 @@
+id: DIAMOND_ORE_VEINS
+type: FEATURE
+
+anchors:
+  # Where the vein generates - very deep
+  - &range # Y min and max
+      min: -64
+      max: 100
+  - &veinThreshold 0.02 # Extremely rare
+  - &veinFrequency 0.0015 # Very large spread
+  - &salt 1111 # Unique seed
+  
+  # Diamond veins are very thick with no webbing
+  - &wallSalt 1112
+  - &wallFrequency 0.008 # Very low frequency = very thick
+  - &wallThickness 0.23 # Very thick walls
+  
+  - &webSalt 1113
+  - &webFrequency 0.02 # Minimal holes
+  - &webThickness 0.12 # Small holes
+  
+  - &replace # A list of blocks to replace
+    - minecraft:deepslate
+  - &blocks # Diamond veins with obsidian matrix
+    - blank: 85
+    - BLOCK:minecraft:obsidian: 100
+    - BLOCK:minecraft:deepslate_diamond_ore: 10
+    - BLOCK:minecraft:diamond_block: 1
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: OPEN_SIMPLEX_2
+      salt: *salt
+      frequency: *veinFrequency
+  threshold: *veinThreshold
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      pattern:
+        type: MATCH_SET
+        blocks: *replace
+        offset: 0
+      range: *range
+
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: "|webWalls(x,y,z)|<wallThickness"
+        variables:
+          wallThickness: *wallThickness
+        samplers:
+          webWalls:
+            dimensions: 3
+            type: OPEN_SIMPLEX_2
+            frequency: *wallFrequency
+            salt: *wallSalt
+  
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: webPunchouts(x,y,z)>-webThickness
+        variables:
+          webThickness: *webThickness
+        samplers:
+          webPunchouts:
+            dimensions: 3
+            type: CELLULAR
+            distance: Euclidean
+            return: Distance2Div
+            frequency: *webFrequency
+            salt: *webSalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: *blocks

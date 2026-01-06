@@ -1,0 +1,13 @@
+id: CROPS_SWAMP
+type: BIOME
+abstract: true
+
+features:
+  flora:
+    # Wetland specialization
+    - SUGAR_CANE
+    # Mushroom farming potential
+    - SMALL_MUSHROOMS
+  trees:
+    # Mushroom blocks from large mushrooms
+    - LARGE_MUSHROOMS

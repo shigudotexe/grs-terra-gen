@@ -1,0 +1,14 @@
+id: LAPIS_ORE_TIER_2
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:lapis_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_lapis_ore
+
+size: 5
+shape: VEIN
+thickness: 0.5
+
+exposed: 0.9

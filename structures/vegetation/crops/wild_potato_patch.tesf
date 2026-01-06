@@ -1,0 +1,10 @@
+num potatoes = 4 + randomInt(6);
+
+for (num i = 0; i < potatoes; i = i + 1) {
+    num x = randomInt(6) - 1;
+    num z = randomInt(6) - 1;
+    
+    if (getBlock(x, -1, z) == "minecraft:grass_block") {
+        block(x, 0, z, "minecraft:potatoes[age=7]");
+    }
+}

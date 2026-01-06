@@ -1,0 +1,9 @@
+id: ORES_HOT_FLATLAND
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - DIAMOND_TIER_1
+    - IRON_TIER_2
+    - GOLD_TIER_2

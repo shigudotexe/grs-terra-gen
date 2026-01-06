@@ -1,0 +1,18 @@
+id: ORES_BADLANDS
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    # Common - Iron (exposed iron formations)
+    - IRON_ORE_HIGH
+    # Rare - Gold (eroded gold veins)
+    - GOLD_ORE_UNIFORM
+    # Sparse - Basic resources
+    - COPPER_ORE_SPARSE
+    - COAL_ORE_SPARSE
+    - IRON_ORE_VEINS
+    - GOLD_ORE_VEINS
+  surface-indicators:
+    - IRON_ORE_SURFACE
+    - GOLD_ORE_SURFACE

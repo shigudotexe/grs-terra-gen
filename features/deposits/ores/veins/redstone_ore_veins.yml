@@ -1,0 +1,83 @@
+id: REDSTONE_ORE_VEINS
+type: FEATURE
+
+anchors:
+  # Where the vein generates - deep redstone
+  - &range # Y min and max
+      min: -64
+      max: 16
+  - &veinThreshold 0.055 # Rare but rich
+  - &veinFrequency 0.0045 # More clustered
+  - &salt 9234 # Unique seed
+  
+  # Redstone veins are thin but very webbed
+  - &wallSalt 9235
+  - &wallFrequency 0.025 # High frequency = thin veins
+  - &wallThickness 0.07 # Thin walls
+  
+  - &webSalt 9236
+  - &webFrequency 0.06 # Lots of holes
+  - &webThickness 0.35 # Big holes
+  
+  - &replace # A list of blocks to replace
+    - minecraft:deepslate
+  - &blocks # Redstone veins with blackstone matrix
+    - blank: 50
+    - BLOCK:minecraft:blackstone: 150
+    - BLOCK:minecraft:deepslate_redstone_ore: 60
+    - BLOCK:minecraft:redstone_block: 3
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: OPEN_SIMPLEX_2
+      salt: *salt
+      frequency: *veinFrequency
+  threshold: *veinThreshold
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      pattern:
+        type: MATCH_SET
+        blocks: *replace
+        offset: 0
+      range: *range
+
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: "|webWalls(x,y,z)|<wallThickness"
+        variables:
+          wallThickness: *wallThickness
+        samplers:
+          webWalls:
+            dimensions: 3
+            type: OPEN_SIMPLEX_2
+            frequency: *wallFrequency
+            salt: *wallSalt
+  
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: webPunchouts(x,y,z)>-webThickness
+        variables:
+          webThickness: *webThickness
+        samplers:
+          webPunchouts:
+            dimensions: 3
+            type: CELLULAR
+            distance: Euclidean
+            return: Distance2Div
+            frequency: *webFrequency
+            salt: *webSalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: *blocks

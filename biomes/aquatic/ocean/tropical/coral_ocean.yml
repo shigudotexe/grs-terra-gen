@@ -1,0 +1,17 @@
+id: CORAL_OCEAN
+type: BIOME
+extends: [TROPICAL_OCEAN, PALETTE_OCEAN, EQ_OCEAN, CARVING_OCEAN, ORES_OCEAN, BASE]
+vanilla: minecraft:warm_ocean
+color: $biomes/colors.yml:CORAL_OCEAN
+
+features:
+  flora:
+    - SUGAR_CANE
+    - CORAL_PLANTS
+    - CORAL_FANS
+  trees:
+    - DENDRIFORM_REEF
+    - BALL_REEF
+
+  landforms:
+    - COPPER_BOULDERS

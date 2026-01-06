@@ -1,0 +1,14 @@
+id: CROPS_TROPICAL
+type: BIOME
+abstract: true
+
+features:
+  flora:
+    # Luxury crop specialization
+    - WILD_BEETROOT
+    - SUGAR_CANE
+    # Jungle specialty
+    - WILD_BERRY
+  trees:
+    # Cocoa beans from jungle trees
+    - JUNGLE_TREES

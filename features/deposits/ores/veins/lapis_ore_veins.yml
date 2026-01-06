@@ -1,0 +1,85 @@
+id: LAPIS_ORE_VEINS
+type: FEATURE
+
+anchors:
+  # Where the vein generates - mid level
+  - &range # Y min and max
+      min: -32
+      max: 32
+  - &veinThreshold 0.045 # Very rare
+  - &veinFrequency 0.0025 # Large spread
+  - &salt 5647 # Unique seed
+  
+  # Lapis veins are medium thickness, moderate webbing
+  - &wallSalt 5648
+  - &wallFrequency 0.018
+  - &wallThickness 0.12
+  
+  - &webSalt 5649
+  - &webFrequency 0.045
+  - &webThickness 0.28
+  
+  - &replace # A list of blocks to replace
+    - minecraft:stone
+    - minecraft:deepslate
+  - &blocks # Lapis veins with calcite matrix
+    - blank: 70
+    - BLOCK:minecraft:calcite: 120
+    - BLOCK:minecraft:lapis_ore: 25
+    - BLOCK:minecraft:deepslate_lapis_ore: 25
+    - BLOCK:minecraft:lapis_block: 2
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: OPEN_SIMPLEX_2
+      salt: *salt
+      frequency: *veinFrequency
+  threshold: *veinThreshold
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      pattern:
+        type: MATCH_SET
+        blocks: *replace
+        offset: 0
+      range: *range
+
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: "|webWalls(x,y,z)|<wallThickness"
+        variables:
+          wallThickness: *wallThickness
+        samplers:
+          webWalls:
+            dimensions: 3
+            type: OPEN_SIMPLEX_2
+            frequency: *wallFrequency
+            salt: *wallSalt
+  
+    - type: SAMPLER_3D
+      range: *range
+      sampler:
+        type: EXPRESSION
+        expression: webPunchouts(x,y,z)>-webThickness
+        variables:
+          webThickness: *webThickness
+        samplers:
+          webPunchouts:
+            dimensions: 3
+            type: CELLULAR
+            distance: Euclidean
+            return: Distance2Div
+            frequency: *webFrequency
+            salt: *webSalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: *blocks

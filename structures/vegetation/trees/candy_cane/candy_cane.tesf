@@ -1,0 +1,11 @@
+num dir = randomInt(4);
+
+if (dir == 0) {
+    structure(0, 0, 0, "candy_cane_n", "NONE");
+} else if (dir == 1) {
+    structure(0, 0, 0, "candy_cane_e", "NONE");
+} else if (dir == 2) {
+    structure(0, 0, 0, "candy_cane_s", "NONE");
+} else if (dir == 3) {
+    structure(0, 0, 0, "candy_cane_w", "NONE");
+}

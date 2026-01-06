@@ -1,0 +1,12 @@
+id: XERIC_PLAINS
+type: BIOME
+extends: [EQ_PLAIN_PEAKS, XERIC_HILLS]
+color: $biomes/colors.yml:XERIC_PLAINS
+
+features:
+  flora:
+    - CACTUS_SPARSE
+    - GRASS
+
+  landforms:
+    - COPPER_BOULDERS

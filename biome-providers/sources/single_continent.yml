@@ -1,0 +1,19 @@
+source:
+  type: SAMPLER
+  biomes:
+    - deep-ocean: 28
+    - ocean: 16
+    - coast: 4
+    - land: 28
+    - SNOWY_PLAINS: 1
+    - SNOWY_MEADOW: 1
+    - TUNDRA_PLAINS: 1
+  sampler:
+    dimensions: 2
+    type: LINEAR
+    min: -1
+    max: 1.5
+    sampler:
+      type: EXPRESSION
+      # Changed / 50 to / 5 to make the spawn area drop off quickly.
+      expression: "(1 - sqrt(x*x + z*z) / 5000) + max(0, 0.6 - sqrt(x*x + z*z) / 25)"

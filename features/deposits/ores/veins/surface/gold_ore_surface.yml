@@ -1,0 +1,26 @@
+id: GOLD_ORE_SURFACE
+type: FEATURE
+
+# DISTRIBUTOR: Identical to gold veins
+distributor:
+  type: SAMPLER
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 7821              # <--- MATCHES GOLD VEINS EXACTLY
+    frequency: 0.003
+  threshold: 0.06
+
+# LOCATOR: Only finds the surface
+locator:
+  type: TOP
+  range:
+    min: 50
+    max: 320
+
+# STRUCTURES: The indicator
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    # This places a single raw gold block
+    - BLOCK:minecraft:raw_gold_block: 1

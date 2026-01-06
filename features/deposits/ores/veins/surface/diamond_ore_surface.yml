@@ -1,0 +1,26 @@
+id: DIAMOND_ORE_SURFACE
+type: FEATURE
+
+# DISTRIBUTOR: Identical to diamond veins
+distributor:
+  type: SAMPLER
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 1111              # <--- MATCHES DIAMOND VEINS EXACTLY
+    frequency: 0.001
+  threshold: 0.015
+
+# LOCATOR: Only finds the surface
+locator:
+  type: TOP
+  range:
+    min: 50
+    max: 320
+
+# STRUCTURES: The indicator
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    # This places a single diamond block
+    - BLOCK:minecraft:diamond_block: 1

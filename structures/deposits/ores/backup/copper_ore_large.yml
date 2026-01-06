@@ -1,0 +1,5 @@
+id: COPPER_ORE_LARGE_OLD
+type: ORE
+extends: COPPER_ORE_OLD
+
+size: 20

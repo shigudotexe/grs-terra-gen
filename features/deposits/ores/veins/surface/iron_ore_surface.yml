@@ -1,0 +1,26 @@
+id: IRON_ORE_SURFACE
+type: FEATURE
+
+# DISTRIBUTOR: Identical to Deep file
+distributor:
+  type: SAMPLER
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 6546              # <--- MATCHES DEEP FILE EXACTLY
+    frequency: 0.0025
+  threshold: 0.08
+
+# LOCATOR: Only finds the surface
+locator:
+  type: TOP
+  range:
+    min: 50
+    max: 320
+
+# STRUCTURES: The indicator
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    # This places a single raw iron block
+    - BLOCK:minecraft:raw_iron_block: 1

@@ -1,0 +1,12 @@
+id: XEROPHYTIC_FOREST
+type: BIOME
+extends: [EQ_PLAIN, DRY_ROCKY_BUMPY_MOUNTAINS, ORES_HOT_FOREST]
+color: $biomes/colors.yml:XEROPHYTIC_FOREST
+
+tags:
+  - LAND_CAVES
+  - USE_RIVER
+
+features:
+  landforms:
+    - COPPER_BOULDERS

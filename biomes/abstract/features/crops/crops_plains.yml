@@ -1,0 +1,11 @@
+id: CROPS_PLAINS
+type: BIOME
+abstract: true
+
+features:
+  flora:
+    # Grain specialization - bread basket biome
+    - WILD_WHEAT
+    - WILD_POTATO
+    # Secondary crops
+    - WILD_BEETROOT
