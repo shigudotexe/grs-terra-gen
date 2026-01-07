@@ -15,7 +15,7 @@ diamond_tier_2:
   averageCountPerChunk: 6
   salt: 1054
   range:
-    min: -144
+    min: -64
     max: 0
 
 diamond_tier_3:
@@ -89,11 +89,11 @@ redstone_tier_4:
     max: 34
 
 emerald_tier_2:
-  averageCountPerChunk: 12
+  averageCountPerChunk: 2
   salt: 5113
   range:
-    min: -16
-    max: 30
+    min: -64
+    max: 0
 
 emerald_tier_4:
   averageCountPerChunk: 35
