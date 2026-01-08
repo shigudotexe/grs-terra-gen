@@ -42,12 +42,26 @@ redstone_tier_4:
     min: -96
     max: 34
 
-emerald_tier_4:
-  averageCountPerChunk: 35
+emerald_tier_4_low:
+  averageCountPerChunk: 1
   salt: 5135
   range:
     min: -16
-    max: 30
+    max: 24
+  
+emerald_tier_4_med:
+  averageCountPerChunk: 2
+  salt: 5136
+  range:
+    min: 24
+    max: 64
+  
+emerald_tier_4_high:
+  averageCountPerChunk: 300 # This seems ridiculous, but in practice the large range seems to act as a counterbalance
+  salt: 5137
+  range:
+    min: 64
+    max: 248
 
 # Tier 3
 coal_tier_3:
