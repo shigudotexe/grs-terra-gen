@@ -35,12 +35,26 @@ gold_tier_4:
     min: -64
     max: 480
 
-redstone_tier_4:
-  averageCountPerChunk: 32
-  salt: 7063
+redstone_tier_4_rect:
+  averageCountPerChunk: 28
+  salt: 6785
   range:
-    min: -96
-    max: 34
+    min: -64
+    max: 24
+
+redstone_tier_4_high:
+  averageCountPerChunk: 9
+  salt: 8675
+  range:
+    min: -48
+    max: -32
+
+redstone_tier_4_low:
+  averageCountPerChunk: 14
+  salt: 563
+  range:
+    min: -64
+    max: -48
 
 emerald_tier_4_low:
   averageCountPerChunk: 1
@@ -79,7 +93,7 @@ copper_tier_3:
     max: 112
 
 iron_tier_3_very_high:
-  averageCountPerChunk: 8 # The range is a bit bigger on this one, so you might need to compensate
+  averageCountPerChunk: 8
   salt: 4545
   range:
     min: 40
@@ -107,7 +121,7 @@ iron_tier_3_low:
     max: 8
 
 iron_tier_3_very_low:
-  averageCountPerChunk: 8 # The range is bigger on this one, so you might need to compensate
+  averageCountPerChunk: 9
   salt: 2580
   range:
     min: -64
@@ -129,7 +143,7 @@ lapis_tier_2:
     max: 32
 
 iron_tier_2_very_high:
-  averageCountPerChunk: 6 # The range is a bit bigger on this one, so you might need to compensate
+  averageCountPerChunk: 6
   salt: 187
   range:
     min: 40
@@ -157,7 +171,7 @@ iron_tier_2_low:
     max: 8
 
 iron_tier_2_very_low:
-  averageCountPerChunk: 6 # The range is bigger on this one, so you might need to compensate
+  averageCountPerChunk: 7
   salt: 5
   range:
     min: -64
@@ -170,12 +184,26 @@ gold_tier_2:
     min: -64
     max: 480
 
-redstone_tier_2:
-  averageCountPerChunk: 6
+redstone_tier_2_rect:
+  averageCountPerChunk: 15
   salt: 7041
   range:
-    min: -96
-    max: 52
+    min: -64
+    max: 24
+
+redstone_tier_2_high:
+  averageCountPerChunk: 7
+  salt: 7042
+  range:
+    min: -48
+    max: -32
+
+redstone_tier_2_low:
+  averageCountPerChunk: 10
+  salt: 7043
+  range:
+    min: -64
+    max: -48
 
 diamond_tier_2_low:
   averageCountPerChunk: 4

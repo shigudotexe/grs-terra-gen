@@ -1,4 +1,4 @@
-id: REDSTONE_ORE_TIER_2
+id: REDSTONE_ORE_TIER_4_LOW
 type: ORE
 extends: ABSTRACT_ORE
 
@@ -7,8 +7,8 @@ material: minecraft:redstone_ore
 material-overrides:
   minecraft:deepslate: minecraft:deepslate_redstone_ore
 
-size: 4
+size: 5
 shape: VEIN
-thickness: 0.5
+thickness: 0.7
 
-exposed: 0.9
+exposed: 1
