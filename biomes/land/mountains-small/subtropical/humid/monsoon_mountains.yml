@@ -30,7 +30,6 @@ slant:
 
 features:
   flora:
-    - WILD_BERRY
     - GRASS
     - LARGE_LEAF_VINES
     - POPPY_PATCH

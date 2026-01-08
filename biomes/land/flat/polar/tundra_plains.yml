@@ -29,9 +29,6 @@ features:
     - FERNS
   trees:
     - OAK_BUSH_PATCHES
-    - CANDY_CANE_TREES
-    - CHRISTMAS_TREES
-    - LAZY_TREES
   slabs:
     - SNOW_LAYERS
   preprocessors:

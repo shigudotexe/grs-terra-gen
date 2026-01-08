@@ -32,10 +32,8 @@ features:
     - SMALL_MOSSY_BOULDER_PATCHES
     - REDSTONE_BOULDERS
   flora:
-    - WILD_BERRY
     - GRASS
     - BUSHES
     - DANDELION_PATCH
-    - WILD_BERRY
   trees:
     - OAK_BUSH_PATCHES

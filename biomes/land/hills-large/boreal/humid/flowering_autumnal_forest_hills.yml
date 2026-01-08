@@ -28,7 +28,6 @@ slant:
 
 features:
   flora:
-    - WILD_CARROTS
     - GRASS
     - WILDFLOWERS
     - LEAF_LITTER

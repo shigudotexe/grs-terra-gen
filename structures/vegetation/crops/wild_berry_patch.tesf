@@ -1,10 +1,21 @@
-num berries = 1 + randomInt(4);
+num berries = 1 + randomInt(3);
 
 for (num i = 0; i < berries; i = i + 1) {
     num x = randomInt(4) - 1;
     num z = randomInt(4) - 1;
+	
+	num rand = randomInt(100);
     
-    if (getBlock(x, -1, z) == "minecraft:grass_block" || getBlock(x, -1, z) == "minecraft:coarse_dirt") {
-        block(x, 0, z, "minecraft:sweet_berry_bush[age=3]");
+    if ((getBlock(x, -1, z) == "minecraft:grass_block" || getBlock(x, -1, z) == "minecraft:coarse_dirt")
+	&& getBlock(x, 1, z) == "minecraft:air") {
+        if (rand >= 40){
+			block(x, 0, z, "minecraft:sweet_berry_bush[age=3]");
+		}
+		else if (rand >= 10){
+			block(x, 0, z, "minecraft:sweet_berry_bush[age=2]");
+		}
+		else {
+			block(x, 0, z, "minecraft:sweet_berry_bush[age=1]");
+		}
     }
 }

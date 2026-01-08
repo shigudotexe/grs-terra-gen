@@ -9,8 +9,10 @@ tags:
 
 features:
   flora:
-    - WILD_WHEAT
     - WILD_CARROTS
+    - GRASS
+    - LEAF_LITTER
+    - WILDFLOWERS
 
   landforms:
     - COPPER_BOULDERS

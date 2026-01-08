@@ -1,10 +1,20 @@
-num potatoes = 4 + randomInt(6);
+num potatoes = 2 + randomInt(4);
 
 for (num i = 0; i < potatoes; i = i + 1) {
     num x = randomInt(6) - 1;
     num z = randomInt(6) - 1;
+	
+	num rand = randomInt(100);
     
-    if (getBlock(x, -1, z) == "minecraft:grass_block") {
-        block(x, 0, z, "minecraft:potatoes[age=7]");
+    if (getBlock(x, -1, z) == "minecraft:grass_block" && getBlock(x, 1, z) == "minecraft:air") {
+        if (rand >= 40){
+			block(x, 0, z, "minecraft:potatoes[age=7]");
+		}
+		else if (rand >= 20){
+			block(x, 0, z, "minecraft:potatoes[age=6]");
+		}
+		else {
+			block(x, 0, z, "minecraft:potatoes[age=5]");
+		}
     }
 }

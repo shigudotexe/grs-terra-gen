@@ -8,5 +8,7 @@ tags:
   - USE_RIVER
 
 features:
+  flora:
+    - WILD_POTATO
   landforms:
     - COAL_BOULDERS

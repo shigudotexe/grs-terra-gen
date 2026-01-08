@@ -27,7 +27,6 @@ anchors:
     - BLOCK:minecraft:calcite: 120
     - BLOCK:minecraft:lapis_ore: 25
     - BLOCK:minecraft:deepslate_lapis_ore: 25
-    - BLOCK:minecraft:lapis_block: 2
 
 distributor:
   type: SAMPLER

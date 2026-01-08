@@ -1,4 +1,4 @@
-num melons = randomInt(4) + 3;
+num melons = randomInt(3) + 3;
 
 for(num m = 0; m < melons; m = m + 1) {
   num y = 4;

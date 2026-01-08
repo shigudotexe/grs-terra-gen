@@ -24,8 +24,7 @@ anchors:
   - &blocks # Redstone veins with blackstone matrix
     - blank: 50
     - BLOCK:minecraft:blackstone: 150
-    - BLOCK:minecraft:deepslate_redstone_ore: 60
-    - BLOCK:minecraft:redstone_block: 3
+    - BLOCK:minecraft:deepslate_redstone_ore: 65
 
 distributor:
   type: SAMPLER

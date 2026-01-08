@@ -9,7 +9,6 @@ colors:
 
 features:
   flora:
-    - WILD_CARROTS
     - GRASS
     - POPPY_PATCH
     - OXEYE_DAISY_PATCH

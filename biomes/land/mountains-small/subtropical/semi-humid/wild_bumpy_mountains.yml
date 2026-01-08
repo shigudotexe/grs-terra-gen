@@ -29,7 +29,6 @@ slant:
 
 features:
   flora:
-    - WILD_BERRY
     - GRASS
     - SUBTROPICAL_BUSHES
     - FERNS

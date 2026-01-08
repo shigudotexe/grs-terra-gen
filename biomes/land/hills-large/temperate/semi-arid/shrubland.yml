@@ -22,7 +22,6 @@ palette:
 
 features:
   flora:
-    - WILD_CARROTS
     - GRASS
     - BUSHES
     - TALL_GRASS

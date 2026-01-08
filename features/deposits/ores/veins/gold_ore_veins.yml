@@ -22,9 +22,9 @@ anchors:
   - &replace # A list of blocks to replace
     - minecraft:stone
     - minecraft:deepslate
-  - &blocks # Gold veins with quartz matrix
+  - &blocks # Gold veins with granite matrix
     - blank: 60
-    - BLOCK:minecraft:quartz_block: 140
+    - BLOCK:minecraft:granite: 140
     - BLOCK:minecraft:gold_ore: 35
     - BLOCK:minecraft:deepslate_gold_ore: 35
     - BLOCK:minecraft:raw_gold_block: 5

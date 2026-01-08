@@ -3,8 +3,15 @@ num beetroots = 2 + randomInt(4);
 for (num i = 0; i < beetroots; i = i + 1) {
     num x = randomInt(6) - 1;
     num z = randomInt(6) - 1;
+	
+	num rand = randomInt(100);
     
-    if (getBlock(x, -1, z) == "minecraft:grass_block") {
-        block(x, 0, z, "minecraft:beetroots[age=3]");
+    if (getBlock(x, -1, z) == "minecraft:grass_block" && getBlock(x, 1, z) == "minecraft:air") {
+        if (rand >= 40){
+			block(x, 0, z, "minecraft:beetroots[age=3]");
+		}
+		else {
+			block(x, 0, z, "minecraft:beetroots[age=2]");
+		}
     }
 }

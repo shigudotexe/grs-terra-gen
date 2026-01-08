@@ -29,7 +29,6 @@ features:
   postprocessors:
     - TREE_SNOW
   trees:
-    - CANDY_CANE_TREES
 
   landforms:
     - EMERALD_BOULDERS

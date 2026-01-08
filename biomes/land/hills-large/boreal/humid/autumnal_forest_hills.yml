@@ -28,7 +28,6 @@ slant:
 
 features:
   flora:
-    - WILD_CARROTS
     - GRASS
     - LEAF_LITTER
     - POPPY_PATCH

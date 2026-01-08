@@ -27,9 +27,6 @@ features:
   postprocessors:
     - TREE_SNOW
   trees:
-    - CANDY_CANE_TREES
-    - CHRISTMAS_TREES
-    - LAZY_TREES
 
   landforms:
     - COAL_BOULDERS

@@ -27,9 +27,9 @@ slant:
 
 features:
   flora:
-    - WILD_CARROTS
     - GRASS
     - LEAF_LITTER
+    - WILD_POTATO
   trees:
     - SPARSE_LARGE_MUSHROOMS
     - DENSE_DARK_FOREST_TREES

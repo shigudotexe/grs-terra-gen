@@ -1,10 +1,20 @@
-num carrots = 4 + randomInt(6);
+num carrots = 2 + randomInt(4);
 
 for (num i = 0; i < carrots; i = i + 1) {
     num x = randomInt(6) - 1;
     num z = randomInt(6) - 1;
+	
+	num rand = randomInt(100);
     
-    if (getBlock(x, -1, z) == "minecraft:grass_block") {
-        block(x, 0, z, "minecraft:carrots[age=7]");
+    if (getBlock(x, -1, z) == "minecraft:grass_block" && getBlock(x, 1, z) == "minecraft:air") {
+        if (rand >= 40){
+			block(x, 0, z, "minecraft:carrots[age=7]");
+		}
+		else if (rand >= 20){
+			block(x, 0, z, "minecraft:carrots[age=6]");
+		}
+		else {
+			block(x, 0, z, "minecraft:carrots[age=5]");
+		}
     }
 }

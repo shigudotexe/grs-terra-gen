@@ -24,8 +24,7 @@ anchors:
   - &blocks # Emerald veins with diorite matrix
     - blank: 80
     - BLOCK:minecraft:diorite: 110
-    - BLOCK:minecraft:emerald_ore: 15
-    - BLOCK:minecraft:emerald_block: 1
+    - BLOCK:minecraft:emerald_ore: 20
 
 distributor:
   type: SAMPLER

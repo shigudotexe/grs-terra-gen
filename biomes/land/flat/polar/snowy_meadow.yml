@@ -27,9 +27,6 @@ features:
     - SNOW_LAYERS
   trees:
     - SPARSE_SPRUCE_TREES
-    - CANDY_CANE_TREES
-    - CHRISTMAS_TREES
-    - LAZY_TREES
   preprocessors:
     - POWDER_SNOW_DEPOSITS
   postprocessors:

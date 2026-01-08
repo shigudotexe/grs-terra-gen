@@ -24,8 +24,7 @@ anchors:
   - &blocks # Diamond veins with obsidian matrix
     - blank: 85
     - BLOCK:minecraft:obsidian: 100
-    - BLOCK:minecraft:deepslate_diamond_ore: 10
-    - BLOCK:minecraft:diamond_block: 1
+    - BLOCK:minecraft:deepslate_diamond_ore: 25
 
 distributor:
   type: SAMPLER

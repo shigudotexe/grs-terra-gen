@@ -6,7 +6,7 @@ anchors:
   - &range # Y min and max
       min: 0
       max: 250
-  - &veinThreshold 0.13 # More common than others
+  - &veinThreshold 0.10 # More common than others
   - &veinFrequency 0.004 # Moderate spread
   - &salt 8765 # Unique seed
   
@@ -24,8 +24,7 @@ anchors:
   - &blocks # Coal veins with andesite matrix
     - blank: 65
     - BLOCK:minecraft:andesite: 130
-    - BLOCK:minecraft:coal_ore: 50
-    - BLOCK:minecraft:coal_block: 3
+    - BLOCK:minecraft:coal_ore: 60
 
 distributor:
   type: SAMPLER

@@ -12,7 +12,6 @@ colors:
 
 features:
   flora:
-    - WILD_CARROTS
     - GRASS
     - WILDFLOWERS
     - MIXED_FLOWER_COVER

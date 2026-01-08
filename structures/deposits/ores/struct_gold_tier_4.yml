@@ -7,8 +7,8 @@ material: minecraft:gold_ore
 material-overrides:
   minecraft:deepslate: minecraft:deepslate_gold_ore
 
-size: 10
+size: 6
 shape: VEIN
-thickness: 0.7
+thickness: 0.6
 
-exposed: 0.9
+exposed: 1

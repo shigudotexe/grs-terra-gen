@@ -4,19 +4,72 @@
 # ---
 # Ore Veins
 # ---
-diamond_tier_1:
-  averageCountPerChunk: 2
-  salt: 1043
-  range:
-    min: -144
-    max: 0
 
-diamond_tier_2:
-  averageCountPerChunk: 6
-  salt: 1054
+# Tier 5
+coal_tier_5:
+  averageCountPerChunk: 45
+  salt: 1123
+  range:
+    min: 0
+    max: 100
+
+# Tier 4
+coal_tier_4:
+  averageCountPerChunk: 38
+  salt: 1112
+  range:
+    min: 0
+    max: 100
+
+lapis_tier_4:
+  averageCountPerChunk: 35
+  salt: 3586
+  range:
+    min: -32
+    max: 32
+
+gold_tier_4:
+  averageCountPerChunk: 40
+  salt: 1129
   range:
     min: -64
-    max: 0
+    max: 480
+
+redstone_tier_4:
+  averageCountPerChunk: 32
+  salt: 7063
+  range:
+    min: -96
+    max: 34
+
+emerald_tier_4:
+  averageCountPerChunk: 32
+  salt: 5135
+  range:
+    min: -16
+    max: 30
+
+# Tier 3
+coal_tier_3:
+  averageCountPerChunk: 24
+  salt: 1101
+  range:
+    min: 0
+    max: 100
+
+copper_tier_3:
+  averageCountPerChunk: 22
+  salt: 2965
+  range:
+    min: -16
+    max: 112
+
+iron_tier_3:
+  averageCountPerChunk: 32
+  salt: 6954
+  range:
+    min: -24
+    max: 56
 
 diamond_tier_3:
   averageCountPerChunk: 18
@@ -25,16 +78,10 @@ diamond_tier_3:
     min: -144
     max: 0
 
+# Tier 2
 lapis_tier_2:
   averageCountPerChunk: 6
-  salt: 3564
-  range:
-    min: -32
-    max: 32
-
-lapis_tier_4:
-  averageCountPerChunk: 35
-  salt: 3586
+  salt: 209
   range:
     min: -32
     max: 32
@@ -46,30 +93,9 @@ iron_tier_2:
     min: -24
     max: 56
 
-iron_tier_3:
-  averageCountPerChunk: 32
-  salt: 6954
-  range:
-    min: -24
-    max: 56
-
-copper_tier_3:
-  averageCountPerChunk: 22
-  salt: 2965
-  range:
-    min: -16
-    max: 112
-
 gold_tier_2:
   averageCountPerChunk: 8
   salt: 5934
-  range:
-    min: -64
-    max: 480
-
-gold_tier_4:
-  averageCountPerChunk: 40
-  salt: 5956
   range:
     min: -64
     max: 480
@@ -81,12 +107,12 @@ redstone_tier_2:
     min: -96
     max: 52
 
-redstone_tier_4:
-  averageCountPerChunk: 35
-  salt: 7063
+diamond_tier_2:
+  averageCountPerChunk: 6
+  salt: 1054
   range:
-    min: -96
-    max: 34
+    min: -144
+    max: 0
 
 emerald_tier_2:
   averageCountPerChunk: 2
@@ -95,33 +121,13 @@ emerald_tier_2:
     min: -64
     max: 0
 
-emerald_tier_4:
-  averageCountPerChunk: 35
-  salt: 5135
-  range:
-    min: -16
-    max: 30
-
-coal_tier_3:
-  averageCountPerChunk: 24
-  salt: 1101
-  range:
-    min: -16
-    max: 100
-
-coal_tier_4:
-  averageCountPerChunk: 38
-  salt: 1112
+# Tier 1
+diamond_tier_1:
+  averageCountPerChunk: 4
+  salt: 1043
   range:
     min: -144
-    max: 100
-
-coal_tier_5:
-  averageCountPerChunk: 45
-  salt: 1123
-  range:
-    min: -144
-    max: 100
+    max: 0
 
 # ---
 # Deposits
