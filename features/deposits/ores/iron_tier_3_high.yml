@@ -1,0 +1,28 @@
+id: IRON_TIER_3_HIGH
+type: FEATURE
+
+anchors:
+  - &structure IRON_ORE_TIER_3_LOW
+  - &densityThreshold 1/256 * ${features/deposits/distribution.yml:iron_tier_3_high.averageCountPerChunk}
+  - &salt $features/deposits/distribution.yml:iron_tier_3_high.salt
+  - &range $features/deposits/distribution.yml:iron_tier_3_high.range
+  - &standard-deviation (${features/deposits/distribution.yml:iron_tier_3_high.range.max} - ${features/deposits/distribution.yml:iron_tier_3_high.range.min}) / 6
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: *salt
+  threshold: *densityThreshold
+
+locator:
+  type: GAUSSIAN_RANDOM
+  amount: 1
+  height: *range
+  standard-deviation: *standard-deviation
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: *structure
+

@@ -1,0 +1,14 @@
+id: IRON_ORE_TIER_2_MED
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:iron_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_iron_ore
+
+size: 5
+shape: VEIN
+thickness: 0.5
+
+exposed: 1.0
