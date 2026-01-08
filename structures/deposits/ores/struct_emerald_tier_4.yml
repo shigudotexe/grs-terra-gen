@@ -7,8 +7,8 @@ material: minecraft:emerald_ore
 material-overrides:
   minecraft:deepslate: minecraft:deepslate_emerald_ore
 
-size: 2
+size: 6
 shape: VEIN
-thickness: 0.5
+thickness: 0.7
 
-exposed: 1
+exposed: 0.9

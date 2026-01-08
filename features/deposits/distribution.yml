@@ -43,7 +43,7 @@ redstone_tier_4:
     max: 34
 
 emerald_tier_4:
-  averageCountPerChunk: 32
+  averageCountPerChunk: 35
   salt: 5135
   range:
     min: -16
