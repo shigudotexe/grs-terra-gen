@@ -14,5 +14,6 @@ for(num p = 0; p < pumpkins; p = p + 1) {
     }
   }
   if(check(x,0,z) != "AIR") fail;
+  if(check(x,y+1,z) != "AIR") fail;
   block(x,y,z,"minecraft:pumpkin");
 }

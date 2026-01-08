@@ -26,3 +26,8 @@ features:
     - SUGAR_CANE
     - BUSHES
     - FIREFLY_BUSHES
+  ores:
+    - DIAMOND_TIER_1
+    - IRON_TIER_2
+    - COAL_TIER_3
+    - COPPER_TIER_3

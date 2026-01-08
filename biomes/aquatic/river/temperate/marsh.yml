@@ -27,3 +27,8 @@ features:
     - SUGAR_CANE
     - SMALL_DRIPLEAF
     - BIG_DRIPLEAF
+  ores:
+    - DIAMOND_TIER_1
+    - IRON_TIER_2
+    - COAL_TIER_3
+    - COPPER_TIER_3

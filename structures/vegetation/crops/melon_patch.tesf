@@ -14,5 +14,6 @@ for(num m = 0; m < melons; m = m + 1) {
     }
   }
   if(check(x,0,z) != "AIR") fail;
+  if(check(x,y+1,z) != "AIR") fail;
   block(x,y,z,"minecraft:melon");
 }
