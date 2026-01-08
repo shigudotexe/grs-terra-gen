@@ -4,7 +4,9 @@ abstract: true
 
 features:
   ores:
-    - DIAMOND_TIER_2
+    - DIAMOND_TIER_2_LOW
+    - DIAMOND_TIER_2_MED
+    - DIAMOND_TIER_2_HIGH
     - IRON_TIER_3
     - COAL_TIER_3
     - COPPER_TIER_3

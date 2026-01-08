@@ -1,4 +1,4 @@
-id: DIAMOND_ORE_TIER_1
+id: DIAMOND_ORE_TIER_1_HIGH
 type: ORE
 extends: ABSTRACT_ORE
 
@@ -9,6 +9,6 @@ material-overrides:
 
 size: 3
 shape: VEIN
-thickness: 0.5
+thickness: 0.3
 
-exposed: 0.9
+exposed: 0.8

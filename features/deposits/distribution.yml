@@ -121,27 +121,55 @@ redstone_tier_2:
     min: -96
     max: 52
 
-diamond_tier_2:
-  averageCountPerChunk: 6
+diamond_tier_2_low:
+  averageCountPerChunk: 4
   salt: 1054
   range:
-    min: -144
-    max: 0
+    min: -64
+    max: -44
+
+diamond_tier_2_med:
+  averageCountPerChunk: 3
+  salt: 2345
+  range:
+    min: -44
+    max: -20
+
+diamond_tier_2_high:
+  averageCountPerChunk: 2
+  salt: 1456
+  range:
+    min: -20
+    max: 12
 
 emerald_tier_2:
-  averageCountPerChunk: 2
+  averageCountPerChunk: 4
   salt: 5113
   range:
-    min: -64
-    max: 0
+    min: -16
+    max: 70
 
 # Tier 1
-diamond_tier_1:
-  averageCountPerChunk: 4
-  salt: 1043
+diamond_tier_1_low:
+  averageCountPerChunk: 3
+  salt: 1234
   range:
-    min: -144
-    max: 0
+    min: -64
+    max: -44
+
+diamond_tier_1_med:
+  averageCountPerChunk: 2
+  salt: 5678
+  range:
+    min: -44
+    max: -20
+
+diamond_tier_1_high:
+  averageCountPerChunk: 1
+  salt: 9101
+  range:
+    min: -20
+    max: 12
 
 # ---
 # Deposits

@@ -4,6 +4,8 @@ abstract: true
 
 features:
   ores:
-    - DIAMOND_TIER_1
+    - DIAMOND_TIER_1_LOW
+    - DIAMOND_TIER_1_MED
+    - DIAMOND_TIER_1_HIGH
     - IRON_TIER_2
     - GOLD_TIER_2

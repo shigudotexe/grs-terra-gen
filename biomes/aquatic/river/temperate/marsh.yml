@@ -28,7 +28,9 @@ features:
     - SMALL_DRIPLEAF
     - BIG_DRIPLEAF
   ores:
-    - DIAMOND_TIER_1
+    - DIAMOND_TIER_1_LOW
+    - DIAMOND_TIER_1_MED
+    - DIAMOND_TIER_1_HIGH
     - IRON_TIER_2
     - COAL_TIER_3
     - COPPER_TIER_3

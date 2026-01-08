@@ -1,0 +1,14 @@
+id: DIAMOND_ORE_TIER_1_LOW
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:diamond_ore
+
+material-overrides:
+  minecraft:deepslate: minecraft:deepslate_diamond_ore
+
+size: 4
+shape: VEIN
+thickness: 0.5
+
+exposed: 0.8
