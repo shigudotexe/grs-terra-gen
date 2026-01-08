@@ -79,35 +79,35 @@ copper_tier_3:
     max: 112
 
 iron_tier_3_very_high:
-  averageCountPerChunk: 12 # The range is a bit bigger on this one, so you might need to compensate
+  averageCountPerChunk: 8 # The range is a bit bigger on this one, so you might need to compensate
   salt: 4545
   range:
     min: 40
     max: 72
 
 iron_tier_3_high:
-  averageCountPerChunk: 18
+  averageCountPerChunk: 12
   salt: 2567
   range:
     min: 24
     max: 40
 
 iron_tier_3_med:
-  averageCountPerChunk: 24
+  averageCountPerChunk: 18
   salt: 689
   range:
     min: -24
     max: 56
 
 iron_tier_3_low:
-  averageCountPerChunk: 18
+  averageCountPerChunk: 12
   salt: 5454
   range:
     min: -8
     max: 8
 
 iron_tier_3_very_low:
-  averageCountPerChunk: 12 # The range is bigger on this one, so you might need to compensate
+  averageCountPerChunk: 8 # The range is bigger on this one, so you might need to compensate
   salt: 2580
   range:
     min: -64

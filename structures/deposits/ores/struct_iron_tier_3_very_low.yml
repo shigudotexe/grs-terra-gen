@@ -9,6 +9,6 @@ material-overrides:
 
 size: 4
 shape: VEIN
-thickness: 0.7
+thickness: 0.5
 
-exposed: 1
+exposed: 0.95

@@ -7,8 +7,8 @@ material: minecraft:iron_ore
 material-overrides:
   minecraft:deepslate: minecraft:deepslate_iron_ore
 
-size: 5
+size: 4
 shape: VEIN
-thickness: 0.65
+thickness: 0.6
 
-exposed: 1
+exposed: 0.95
