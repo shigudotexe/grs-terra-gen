@@ -12,6 +12,6 @@ features:
     - IRON_TIER_2_MED
     - IRON_TIER_2_LOW
     - IRON_TIER_2_VERY_LOW
-    - LAPIS_TIER_2
+    - LAPIS_TIER_2_RECT
     - COAL_TIER_3
     - COPPER_TIER_3
