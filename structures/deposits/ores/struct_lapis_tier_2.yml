@@ -1,4 +1,4 @@
-id: LAPIS_ORE_TIER_2_RECT
+id: LAPIS_ORE_TIER_2
 type: ORE
 extends: ABSTRACT_ORE
 
@@ -9,6 +9,6 @@ material-overrides:
 
 size: 5
 shape: VEIN
-thickness: 0.45
+thickness: 0.5
 
-exposed: 0.8
+exposed: 0.9
