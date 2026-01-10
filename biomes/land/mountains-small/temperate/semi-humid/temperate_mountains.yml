@@ -29,6 +29,7 @@ slant:
 
 features:
   flora:
+    - WILD_BEETROOT
     - WILD_BERRY
     - GRASS
     - BUSHES

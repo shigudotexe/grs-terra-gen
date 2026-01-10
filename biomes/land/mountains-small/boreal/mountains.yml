@@ -32,6 +32,7 @@ features:
     - SMALL_BOULDER_PATCHES
     - EMERALD_BOULDERS
   flora:
+    - WILD_BEETROOT
     - WILD_BERRY
     - POPPY_PATCH
     - DANDELION_PATCH

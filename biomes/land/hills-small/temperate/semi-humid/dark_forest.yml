@@ -29,7 +29,7 @@ features:
   flora:
     - GRASS
     - LEAF_LITTER
-    - WILD_POTATO
+    - WILD_CARROTS
   trees:
     - SPARSE_LARGE_MUSHROOMS
     - DENSE_DARK_FOREST_TREES

@@ -15,7 +15,7 @@ features:
     - GRASS
     - WILDFLOWERS
     - MIXED_FLOWER_COVER
-    - WILD_BEETROOT
+    - WILD_CARROTS
 
   landforms:
     - COPPER_BOULDERS

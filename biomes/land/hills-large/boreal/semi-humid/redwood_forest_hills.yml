@@ -37,6 +37,7 @@ features:
     - COPPER_BOULDERS
   flora:
     - WILD_BERRY
+    - WILD_POTATO
     - POPPY_PATCH
     - DANDELION_PATCH
     - ROSE_BUSH_PATCH

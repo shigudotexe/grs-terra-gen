@@ -29,56 +29,56 @@ lapis_tier_4:
     max: 64
 
 gold_tier_4_very_high:
-  averageCountPerChunk: 2
+  averageCountPerChunk: 1
   salt: 1129
   range:
     min: 10
     max: 32
 
 gold_tier_4_high:
-  averageCountPerChunk: 4
+  averageCountPerChunk: 2
   salt: 87524
   range:
     min: -8
     max: 16
 
 gold_tier_4_med:
-  averageCountPerChunk: 6
+  averageCountPerChunk: 4
   salt: 23444
   range:
     min: -30
     max: -2
 
 gold_tier_4_low:
-  averageCountPerChunk: 4
+  averageCountPerChunk: 2
   salt: 53535
   range:
     min: -48
     max: -24
 
 gold_tier_4_very_low:
-  averageCountPerChunk: 2
+  averageCountPerChunk: 1
   salt: 1286473
   range:
     min: -70
     max: -46
 
 redstone_tier_4_rect:
-  averageCountPerChunk: 28
+  averageCountPerChunk: 14
   salt: 6785
   range:
     min: -64
     max: 24
 
 redstone_tier_4_high:
-  averageCountPerChunk: 9
+  averageCountPerChunk: 7
   salt: 8675
   range:
     min: -48
     max: -32
 
 redstone_tier_4_low:
-  averageCountPerChunk: 14
+  averageCountPerChunk: 12
   salt: 563
   range:
     min: -64
@@ -206,7 +206,7 @@ iron_tier_2_very_low:
     max: -8
 
 gold_tier_2_rect:
-  averageCountPerChunk: 6
+  averageCountPerChunk: 2
   salt: 5934
   range:
     min: 10
@@ -248,21 +248,21 @@ gold_tier_2_very_low:
     max: -46
 
 redstone_tier_2_rect:
-  averageCountPerChunk: 15
+  averageCountPerChunk: 10
   salt: 7041
   range:
     min: -64
     max: 24
 
 redstone_tier_2_high:
-  averageCountPerChunk: 7
+  averageCountPerChunk: 5
   salt: 7042
   range:
     min: -48
     max: -32
 
 redstone_tier_2_low:
-  averageCountPerChunk: 10
+  averageCountPerChunk: 8
   salt: 7043
   range:
     min: -64

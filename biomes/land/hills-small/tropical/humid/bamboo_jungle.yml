@@ -17,7 +17,6 @@ features:
   trees:
     - JUNGLE_TREES
     - JUNGLE_BUSHES
-    - WILD_POTATO
     - BAMBOO_PATCHES
 
   landforms:
